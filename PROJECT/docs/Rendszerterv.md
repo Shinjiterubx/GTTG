@@ -41,4 +41,18 @@ Ezeket a bejegyzéseket a weboldal eltárolja egy adatbázisban és láthatóvá
   **Törvényi előírások, szabványok:**
   - **GDPR-nek való megfelelés**
 
+
+  ## 5. Funkcionális terv
+
+**Rendszerszereplők:**
+  - **Felhasználó**
+
+  **Rendszerhasználati esetek és lefutásaik:**
+  - **Felhasználó**
+    - **Megtekintheti a bejegyzéseket**
+    - **Törölheti a korábban létrehozott bejegyzéseket**
+    - **Módosíthatja a bejegyzéseket**
   
+
+
+
