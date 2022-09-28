@@ -7,3 +7,8 @@ Az oldal ingyenes lesz illetve csak a felhasználók által létrehozott bejegyz
 ## 2. Jelenlegi helyzet
 
 A mai világban nagyon fontos egy olyan platform amelyen a felhasználók szabadon, cenzúra nélkül oszthatják meg gondolataikat, tapasztalataikat egy adott szolgáltatásról. A mi alkalmazásunk pontosan ennek ad megfelelő teret.
+
+## 3. Vágyálom rendszer 
+
+A weboldal célja, hogy a szolgáltatók visszajelzések alapján tudják javítani szolgáltatásaikat, termékeiket.
+A weblap maga egy letisztult oldal a lehető legjobban átlátható, könnyen kezelhető, mindenki számára egyértelmű működéssel bírjon.
