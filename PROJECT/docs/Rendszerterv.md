@@ -66,6 +66,14 @@ Ezeket a bejegyzéseket a weboldal eltárolja egy adatbázisban és láthatóvá
 
 A rendszer tökéletes működéséhez szükség van egy adatbázis szerverre, ebben az esetben MySql-t használunk. A bootstrap mint CSS keretrendszer felel a reszponzív webdesign-ért. A backend php alapú.
 
+## 10. Tesztterv
+
+Az alább leírt tesztelések célja a rendszer és funkcióinak teljes körű vizsgálata, ellenőrzése.
+
+Gombok, linkek tesztelése: tesztünk célja: a weboldalon megjelenő gombok és linkek megfelelő működésének ellenőrzése.
+Adatrögzítések leelenőrzése, hogy sikeresen feltöltődtek-e az adatbázisba. 
+Adatok betöltése az adatbázisból.
+
 
 
 
