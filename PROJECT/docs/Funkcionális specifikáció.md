@@ -17,3 +17,19 @@ Bejegyzések rész:
 - A felhasználók létrehozhatnak bejegyzéseket
 
 ## 4. Jelenlegi üzleti folyamatok modellje
+
+
+## 5. Igényelt üzleti folyamatok modellje
+    5.1 Felhasználók jogai
+        5.1.1 A felhasználók létrehozhatnak bejegyzéseket
+        5.1.2 A felhasználók megtekinthetik a bejegyzéseket
+        5.1.3 A felhasználók módosíthatják a bejegyzéseket
+        5.1.4 A felhasználók törölhetik a bejegyzéseket
+    
+## 6. Használati esetek
+
+- **Az oldalra látogatva**
+    - **Bejegyzések megtekintése**
+    - **Bejegyzések létrehozása**
+    - **Bejegyzések módosítása**
+    - **Bejegyzések törlése**
