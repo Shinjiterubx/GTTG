@@ -26,3 +26,19 @@ Ezeket a bejegyzéseket a weboldal eltárolja egy adatbázisban és láthatóvá
  - 10.05 Felhasználói felület kialakítása
 
  ## 3. Üzleti folyamatok modellje
+
+
+
+ ## 4. Követelmények
+
+**Funkcionális követelmények**
+  - **Felhasználó bejegyzéseinek tárolása**
+  - **Felhasználó tudják változtatni a bejegyzéseiket**
+  - **Felhasználó tudják módosítani és törölni a létrehozott bejegyzéseiket**
+
+  **Nem funkcionális követelmények**
+
+  **Törvényi előírások, szabványok:**
+  - **GDPR-nek való megfelelés**
+
+  
