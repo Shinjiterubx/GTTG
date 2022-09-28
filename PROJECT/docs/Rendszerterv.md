@@ -24,3 +24,5 @@ Ezeket a bejegyzéseket a weboldal eltárolja egy adatbázisban és láthatóvá
  - 10.04 Backend funkciók elkészítése
  - 10.04 Frontend design megtervezése
  - 10.05 Felhasználói felület kialakítása
+
+ ## 3. Üzleti folyamatok modellje
