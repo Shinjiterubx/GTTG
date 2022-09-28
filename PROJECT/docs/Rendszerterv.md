@@ -53,6 +53,14 @@ Ezeket a bejegyzéseket a weboldal eltárolja egy adatbázisban és láthatóvá
     - **Törölheti a korábban létrehozott bejegyzéseket**
     - **Módosíthatja a bejegyzéseket**
   
+## 6. Fizikai környezet
+
+- **Az alkalmazás csak web platformra készül, AWS EC2 instance-ra telepített Apache szerveren, MySQL adatbázissal lesz futtatva.**
+  - **Nincsenek megvásárolt komponensek.**
+  - **Fejlesztői eszközök:**
+    - **Visual Studio Code**
+    - **Notepad++**
+    - **XAMPP**
 
 
 
