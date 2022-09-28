@@ -22,3 +22,9 @@ A weblap maga egy letisztult oldal a lehető legjobban átlátható, könnyen ke
   - **Felhasználók tudnak a létrehozni bejegyzéseket**
   - **Felhasználók meg tudják tekinteni a létrehozott bejegyzéseket**
 
+
+
+## 5. Rendszerre vonatkozó törvények, szabványok, ajánlások
+
+Opensource szoftver. Bárki által letölthető és felhasználható. Az értékesítése nem megengedett!
+
