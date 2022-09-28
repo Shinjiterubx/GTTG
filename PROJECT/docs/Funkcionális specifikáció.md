@@ -18,6 +18,7 @@ Bejegyzések rész:
 
 ## 4. Jelenlegi üzleti folyamatok modellje
 
+![Jelenlegi üzleti folyamatok modellje](../docs/pics/func.png)
 
 ## 5. Igényelt üzleti folyamatok modellje
     5.1 Felhasználók jogai
