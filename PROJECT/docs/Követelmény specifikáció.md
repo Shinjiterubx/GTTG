@@ -12,3 +12,13 @@ A mai világban nagyon fontos egy olyan platform amelyen a felhasználók szabad
 
 A weboldal célja, hogy a szolgáltatók visszajelzések alapján tudják javítani szolgáltatásaikat, termékeiket.
 A weblap maga egy letisztult oldal a lehető legjobban átlátható, könnyen kezelhető, mindenki számára egyértelmű működéssel bírjon.
+
+
+## 4. Funkcionális követelmények
+
+  - **Felhasználók adatainak tárolása**
+  - **Felhasználók tudják törölni a létrehozott bejegyzéseket**
+  - **Felhasználók tudják módosítani a létrehozott bejegyzéseket**
+  - **Felhasználók tudnak a létrehozni bejegyzéseket**
+  - **Felhasználók meg tudják tekinteni a létrehozott bejegyzéseket**
+
