@@ -82,5 +82,15 @@ A weboldal hibátlan megfelelő megjelenés tesztelése számítógépen illetve
 
 A webes felület HTML, CSS és PHP nyelven fog elkészülni. A különböző technológiákat amennyire csak lehet, külön fájlokba írva készítjük el, úgy csatoljuk egymáshoz ezzel is egy átláthatóbb, könnyebben változtatható és bővíthető weboldal lesz. Az adatokat egy MYSQL adatbázisban fogjuk tárolni.
 
+## 10. Telepítési terv
 
+A szoftver webes felületéhez csak egy böngésző telepítése szükséges.
+
+**Windows - Microsoft Edge**
+
+**Linux - Mozilla Firefox**
+
+**Mac - Safari**
+
+A webszerverre közvetlenül az internetről kapcsolódnak rá a kliensek. A weboldal URL címét szükséges ismerni és ezt beírni a böngésző címsorába.
 
