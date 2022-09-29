@@ -22,7 +22,11 @@ A weblap maga egy letisztult oldal a lehető legjobban átlátható, könnyen ke
   - **Felhasználók tudnak a létrehozni bejegyzéseket**
   - **Felhasználók meg tudják tekinteni a létrehozott bejegyzéseket**
 
+## 6. Jelenlegi üzleti folyamatok modellje
 
+        6.1 Bejegyzés létrehozása
+                6.1.1 Cím megadása      
+                6.1.2 Bejegyzés leírása
 
 ## 5. Rendszerre vonatkozó törvények, szabványok, ajánlások
 
