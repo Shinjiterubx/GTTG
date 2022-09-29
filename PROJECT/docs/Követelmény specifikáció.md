@@ -22,17 +22,25 @@ A weblap maga egy letisztult oldal a lehető legjobban átlátható, könnyen ke
   - **Felhasználók tudnak a létrehozni bejegyzéseket**
   - **Felhasználók meg tudják tekinteni a létrehozott bejegyzéseket**
 
+## 5. Rendszerre vonatkozó törvények, szabványok, ajánlások
+
+Opensource szoftver. Bárki által letölthető és felhasználható. Az értékesítése nem megengedett!  
+
 ## 6. Jelenlegi üzleti folyamatok modellje
 
         6.1 Bejegyzés létrehozása
                 6.1.1 Cím megadása      
                 6.1.2 Bejegyzés leírása
 
-## 5. Rendszerre vonatkozó törvények, szabványok, ajánlások
+## 7. Igényelt üzleti folyamatok modellje
+   7.2 Bejelentkezés nélküli felhasználók jogai:
+            7.2.1 Bejegyzések megjelenítése
+            7.2.2 Bejegyzések létrehozása        
+            7.2.2 Bejegyzések törlése
+            7.2.3 Bejegyzések módosítása
 
-Opensource szoftver. Bárki által letölthető és felhasználható. Az értékesítése nem megengedett!
 
-## 6. Fogalomtár
+## 9. Fogalomtár
 
 - **UML** - Unified Modeling Language
 - **Reszponzív felület** - Mobilon, Tableten, PC-n igazodik a
