@@ -40,6 +40,14 @@ Opensource szoftver. Bárki által letölthető és felhasználható. Az érték
                  7.1.3 Bejegyzések törlése
                  7.1.4 Bejegyzések módosítása
 
+## 8. Követelménylista
+
+Modul | ID | Név | Kifejtés
+--- | --- | --- | ----------------------------------------------------------------------
+Felület | K1 | Bejegyzés létrehozása  felület | Bejegyzés létrehozása
+Felület | K2 | Bejegyzés szerkesztése | Bejegyzés törlése, frissítése
+Felület | K3 | Bejegyzés megjelenítése | Bejegyzés megjelenítése
+Back-end | K4 | Adatbázis kapcsolat létrehozása | Adatbázis kapcsolat létrehozása
 
 ## 9. Fogalomtár
 
