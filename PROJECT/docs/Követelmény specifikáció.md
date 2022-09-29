@@ -33,11 +33,12 @@ Opensource szoftver. Bárki által letölthető és felhasználható. Az érték
                 6.1.2 Bejegyzés leírása
 
 ## 7. Igényelt üzleti folyamatok modellje
-   7.2 Bejelentkezés nélküli felhasználók jogai:
-            7.2.1 Bejegyzések megjelenítése
-            7.2.2 Bejegyzések létrehozása        
-            7.2.2 Bejegyzések törlése
-            7.2.3 Bejegyzések módosítása
+
+   7.1 Bejelentkezés nélküli felhasználók jogai:
+            7.1.1 Bejegyzések megjelenítése
+            7.1.2 Bejegyzések létrehozása        
+            7.1.3 Bejegyzések törlése
+            7.1.4 Bejegyzések módosítása
 
 
 ## 9. Fogalomtár
