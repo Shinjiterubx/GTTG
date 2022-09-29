@@ -27,7 +27,7 @@ Ezeket a bejegyzéseket a weboldal eltárolja egy adatbázisban és láthatóvá
 
  ## 3. Üzleti folyamatok modellje
 
-![business](../docs/pics/abra4.png)
+![business](../docs/pics/abra2.png)
 
  ## 4. Követelmények
 

@@ -40,7 +40,7 @@ Opensource szoftver. Bárki által letölthető és felhasználható. Az érték
                  7.1.3 Bejegyzések törlése
                  7.1.4 Bejegyzések módosítása
 
-![business](../docs/pics/abra3.png)
+![business](../docs/pics/abra4.png)
 
 ## 8. Követelménylista
 
