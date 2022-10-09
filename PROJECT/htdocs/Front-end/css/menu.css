@@ -72,3 +72,79 @@ aside.side-bar-wrap:hover nav.side-bar .logo-area img.max {
   max-width: 90%;
   opacity: 1;
 }
+nav.side-bar ul {
+  padding: 0;
+  margin: calc(2 * var(--radius-size)) 0;
+  display: flex;
+  flex-direction: column;
+}
+nav.side-bar ul li {
+  height: 50px;
+  padding: 10px var(--radius-size);
+  list-style: none;
+  border-radius: var(--radius-size);
+  margin-bottom: var(--radius-size);
+  z-index: 1;
+}
+nav.side-bar ul li:not(.active) {
+  z-index: 2;
+}
+nav.side-bar ul li:not(.active):hover {
+  backdrop-filter: brightness(0.85);
+}
+nav.side-bar ul li.active {
+  position: relative;
+  background-color: var(--color-secondary);
+  border-radius: 0 var(--radius-size) var(--radius-size) 0;
+}
+nav.side-bar ul li.active::before,
+nav.side-bar ul li.active::after {
+  --curve-size: calc(2 * var(--radius-size));
+  content: '';
+  width: var(--curve-size);
+  height: var(--curve-size);
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  position: absolute;
+}
+nav.side-bar ul li.active::before {
+  top: calc(-1 * var(--curve-size));
+  left: 0;
+  box-shadow: calc(-1 * var(--curve-size) * 0.5) calc(var(--curve-size) * 0.5) var(--color-secondary);
+}
+nav.side-bar ul li.active::after {
+  bottom: calc(-1 * var(--curve-size));
+  left: 0;
+  box-shadow: calc(-1 * var(--curve-size) * 0.5) calc(-1 * var(--curve-size) * 0.5) var(--color-secondary);
+}
+nav.side-bar ul li a{
+  color: black;
+  font-size: 16pt;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 0;
+  align-items: center;
+  text-decoration: none;
+  transition: 1s;
+}
+aside:hover nav.side-bar ul li a{
+  gap: 10px;
+}
+nav.side-bar ul li a span {
+  display: flex;
+  transition: 0.75s cubic-bezier(0.39, 0.58, 0.57, 1);
+}
+nav.side-bar ul li a span.icon {
+  font-size: 24pt;
+}
+nav.side-bar ul li a span.title {
+  max-width: 0;
+  opacity: 0;
+}
+aside:hover nav.side-bar ul li a span.title {
+  width: auto;
+  max-width: 10rem;
+  opacity: 1;
+}
+
