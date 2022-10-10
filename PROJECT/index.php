@@ -74,6 +74,20 @@
       <iframe id="container" class="container" src="content/kezdolap.html" style="border-width: 0px; width: 100%; height: 20%">
       </iframe>
 
+      <div class="row" style="margin-left: 100px">
+              <label>Bejegyzés Címe:</label>
+              <br>
+              <br>
+              <input class="textbox" type="text" placeholder="Cím" name="cim" required style="border-radius: 25px">
+              <br>
+              <br>
+              <br>
+              <label>
+              <input class="textbox" type="text" name="szoveg" required style="width: 500px; height: 500px;">
+              <div>
+              <input id="submitbtn" type="submit" value="Hozzáadás">
+              </div>
+      </div>
       
       <?php
 
