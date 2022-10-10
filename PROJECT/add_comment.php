@@ -10,13 +10,13 @@ session_start();
         return $data;
     }
 
-    $id = textvalidation(mysqli_real_escape_string($conn,$_POST['pid']));
+   
     $title = textvalidation(mysqli_real_escape_string($conn,$_POST['title']));
     $comment = textvalidation(mysqli_real_escape_string($conn,$_POST['comment']));
  
     $insert_to = mysqli_query($conn,"INSERT into posts
-    (pid, title, comment) 
-    VALUES ('$id','$title','$comment')");
+    ( title, comment) 
+    VALUES ('$title','$comment')");
 
     if($insert_to!=0){
     echo "<script>alert('Sikeres hozzáadás');
