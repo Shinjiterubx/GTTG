@@ -17,7 +17,7 @@ session_start();
 
     if($update_to!=0){
     echo "<script>alert('Sikeres hozzáadás');
-    document.location.href='index.php.php' </script>";
+    document.location.href='index.php' </script>";
     }
     else{
         echo "<script>alert('Sikertelen hozzáadás');
