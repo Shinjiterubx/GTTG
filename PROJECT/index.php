@@ -67,18 +67,19 @@
             </ul>
          </nav>
       </aside>
-      <iframe id="container" class="container" src="content/kezdolap.html" style="border-width: 0px; width: 100%; height: 20%">
-      </iframe>
+
       <!--
 
       EZ A KÖZEPE ENNEK A FOSNAK!   
       
       !-->
 
+      <div></div>
+      <h1>Kezdőlap</h1>
+      <h2>Köszöntjük az Oláh Család Pékségében!</h2> 
 
-
-      <div class="middlecontainer" style="width: 40%; margin-left: 5%; background-color: #F2F3F4; border-radius: 25px;">
-         <table style="position: relative; margin-left: 100px; text-align: left;">
+      <div class="middlecontainer" style="display: flex; width: 40%; margin-left: 10%; background-color: #F2F3F4; border-radius: 25px;">
+         <table style="text-align: left;">
             <tr>
                <th>
                   <h2 style="margin-top: 10%;">Bejegyzés létrehozása</h2>
@@ -88,31 +89,39 @@
                         <input type="text" id="inputTitle" name="inputTitle">
                         <br>
                         <br>
-                        <textarea style="width: 500px; height: 300px; resize: none;" id="inputText" name="inputText"></textarea>
+                        <textarea style=" width: 500px; height: 300px; resize: none;" id="inputText" name="inputText"></textarea>
                         <br>
                         <button type="submit">Létrehozás</button>
                      </form>
                </th>
             </tr>
-
+            <?php
+               $sql = "SELECT  * from posts";
+               $result = mysqli_query($conn, $sql);
+               $datas = array();
+               if (mysqli_num_rows($result) > 0) {
+                  while ($row = mysqli_fetch_assoc($result)){
+                     $datas[] = $row;
+                  }
+                                 
+                  for ($i=0; $i < count($datas); $i++) 
+                  { 
+                     echo('
+                        <tr>
+                           <td style="border: 5px solid white;">
+                              <h2>'.$datas[$i]["title"].'</h2>
+                              <p>'.$datas[$i]["comment"].'</p>
+                              <br>
+                              <a type="submit" href="update_comment.php">Módosítás</button>
+                              <a type="submit" href="delete_comment.php">Törlés</button>
+                           </td>
+                        </tr>
+                        ');
+                  }
+            }
+            ?>
          </table>
       </div>
-
-
-      
-
-
-      
-      <?php
-
-      ?>
-
-
-
-
-
-
-
       <script>
          const initNavBar = () => {
            const menusEl = document.querySelectorAll('.side-bar ul li')
