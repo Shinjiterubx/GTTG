@@ -19,10 +19,6 @@
    <body>
       <aside class="side-bar-wrap">
          <nav class="side-bar" id="menu-bar">
-            <div class="logo-area">  
-               <img class="min" src="images/min-logo.png" alt="logo">
-               <img class="max" src="images/max-logo.png" alt="logo">
-            </div>
             <ul>
                <li class="active">
                   <a href="#" onClick="goToPage('content/kezdolap.html')">
@@ -73,30 +69,49 @@
       </aside>
       <iframe id="container" class="container" src="content/kezdolap.html" style="border-width: 0px; width: 100%; height: 20%">
       </iframe>
+      <!--
 
-      <div class="tablemain" style="margin-left:80px">
-         <table>
+      EZ A KÖZEPE ENNEK A FOSNAK!   
+      
+      !-->
+
+
+
+      <div class="middlecontainer" style="width: 40%; margin-left: 5%; background-color: #F2F3F4; border-radius: 25px;">
+         <table style="position: relative; margin-left: 100px; text-align: left;">
             <tr>
-               <td>
-                  <h2>Bejegyzés létrehozása:</h2>
-                  <input type="text" placeholder="Cím" name="cim" required>
-               </td>
+               <th>
+                  <h2 style="margin-top: 10%;">Bejegyzés létrehozása</h2>
+                     <form action="add_comment.php" method="POST">
+                        <label>Cím</label>
+                        <br>
+                        <input type="text" id="inputTitle" name="inputTitle">
+                        <br>
+                        <br>
+                        <textarea style="width: 500px; height: 300px; resize: none;" id="inputText" name="inputText"></textarea>
+                        <br>
+                        <button type="submit">Létrehozás</button>
+                     </form>
+               </th>
             </tr>
-            <tr>
-               <td>
-                  <textarea rows="15" cols="50" placeholder="Ide írja a bejegyzést!"></textarea>
-                  <br>
-                  <br>
-                  <input type="submit" value="Létrehozás">
-               </td>
-            </tr>
+
          </table>
       </div>
+
+
+      
+
 
       
       <?php
 
       ?>
+
+
+
+
+
+
 
       <script>
          const initNavBar = () => {
