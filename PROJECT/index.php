@@ -106,20 +106,18 @@
                   for ($i=0; $i < count($datas); $i++) 
                   { 
                      echo('
-                        <tr>
-                           <td style="border: 5px solid white;">
-                              <h2>'.$datas[$i]["title"].'</h2>
-                              <p>'.$datas[$i]["comment"].'</p>
-                              <br>
-<<<<<<< Updated upstream
-                              <a type="submit" href="update_comment.php" value="'.$datas[$i]['pid'].'">Módosítás</button>
-                              <a type="submit" href="delete_comment.php" value="'.$datas[$i]['pid'].'">Törlés</button>
-=======
-                              <a type="submit" href="update_comment.php">Módosítás</button>
-                              <a type="submit" href="delete_comment.php'.id=<?php echo $datas['id']; ?>.'">Törlés</button>
->>>>>>> Stashed changes
-                           </td>
-                        </tr>
+                     <tr>
+                     <td style="border: 5px solid white;">
+                        <h2>'.$datas[$i]["title"].'</h2>
+                        <p>'.$datas[$i]["comment"].'</p>
+                        <br>
+                        <a type="submit" href="update_comment.php" value="'.$datas[$i]['pid'].'" id="modifyBtn" >Módosítás</button>
+                        <form action="delete_comment.php" method="POST">
+                           <input type="hidden" id="deleteBtn" name="deleteBtn" value="'.$datas[$i]['pid'].'"></input>
+                           <button type="submit" >Törlés</button>
+                        </form>
+                        </td>
+                  </tr>
                         ');
                   }
             }
