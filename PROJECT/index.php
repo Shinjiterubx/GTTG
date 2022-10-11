@@ -111,8 +111,8 @@
                               <h2>'.$datas[$i]["title"].'</h2>
                               <p>'.$datas[$i]["comment"].'</p>
                               <br>
-                              <a type="submit" href="update_comment.php">Módosítás</button>
-                              <a type="submit" href="delete_comment.php">Törlés</button>
+                              <a type="submit" href="update_comment.php" value="'.$datas[$i]['pid'].'">Módosítás</button>
+                              <a type="submit" href="delete_comment.php" value="'.$datas[$i]['pid'].'">Törlés</button>
                            </td>
                         </tr>
                         ');
