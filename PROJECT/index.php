@@ -70,7 +70,6 @@
 
       <!--
 
-      EZ A KÖZEPE ENNEK A FOSNAK!   
       
       !-->
 
