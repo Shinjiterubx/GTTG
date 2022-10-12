@@ -9,13 +9,18 @@ if ($modify_ID == 0){
   header("Location: index.php");
 } 
 else{
-
   $title = $_POST['inputTitle'];
   $comment = $_POST['inputText'];
-
-  $update=mysqli_query($conn,"UPDATE posts SET 
-  title='$title', comment='$comment', modify = 0 WHERE pid='$post_id'");
-
-  echo "<script>alert('Sikeres Frissítés!');</script>";
-  header("Location: index.php");
+  
+  if ($title && $comment) {
+    $update=mysqli_query($conn,"UPDATE posts SET 
+    title='$title', comment='$comment', modify = 0 WHERE pid='$post_id'");
+  
+    echo "<script>alert('Sikeres Frissítés!');</script>";
+    header("Location: index.php");
+  }
+  else{
+    echo "<script>alert('Hiányzó adatok!');</script>";
+    include 'index.php';
+  }
 }
