@@ -1,20 +1,21 @@
 <?php
 include 'connect.php';
 
-$select_id=$_POST['modifyBtn'];
-$modify_ID=$_POST['pid'];
-
-$title = $_POST['inputTitle'];
-$comment = $_POST['inputText'];
+$post_id=$_POST['modifyBtnId'];
+$modify_ID=$_POST['modifyBtn'];
 
 if ($modify_ID == 0){ 
-  $modify_ID = 1;
+  mysqli_query($conn, "UPDATE posts SET modify = 1 WHERE pid='$post_id'");
   header("Location: index.php");
 } 
 else{
+
+  $title = $_POST['inputTitle'];
+  $comment = $_POST['inputText'];
+
   $update=mysqli_query($conn,"UPDATE posts SET 
-  title='$title', comment='$comment' WHERE modify='$select_id'");
-  $modify_ID = 0;
+  title='$title', comment='$comment', modify = 0 WHERE pid='$post_id'");
+
   echo "<script>alert('Sikeres Frissítés!');</script>";
   header("Location: index.php");
 }
