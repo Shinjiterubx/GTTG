@@ -70,7 +70,8 @@
 
       <!--
 
-      
+      Középső rész
+
       !-->
 
       <div></div>
@@ -94,7 +95,16 @@
                      </form>
                </th>
             </tr>
+
+
+            <!--
+
+            PHP kód a bejegyzések kijelzéséhez, módosításához, törléséhez.
+            Nem a legszebb a kód, de hát na :(
+
+            !-->
             <?php
+            # Az adatbázisból az adatokat feltöltjük egy tömbbe, későbbiekben ezekkel dolgozunk datas[]
                $sql = "SELECT  * from posts";
                $result = mysqli_query($conn, $sql);
                $datas = array();
@@ -106,6 +116,10 @@
                   for ($i=0; $i < count($datas); $i++) 
                   { 
                      
+                     # A bejegyzések megjelenítése, amennyiben a modify érték 1-re van állítva inputot és textareát fog kirakni a bejegyzés helyett
+                     # Ellenkező esetben megjeleníti a bejegyzést
+                     # A modify műveletet a modify_comment.php a törlést a delete_comment.php fileban lehet megtalálni.
+
                      if ($datas[$i]["modify"] != 1) {
                         echo('
                         <tr>
@@ -136,7 +150,9 @@
                                  <form action="modify_comment.php" method="POST">
                                     <label>Cím</label>
                                     <br>
-                                    <input type="text" id="inputTitle" name="inputTitle">
+                                    <input type="hidden" id="modifyBtnId" value="'.$datas[$i]['pid'].'" name="modifyBtnId"></input>
+                                    <input type="hidden" id="modifyBtn" value="'.$datas[$i]['modify'].'" name="modifyBtn"></input>
+                                    <input type="text" id="inputTitle" value="'.$datas[$i]['title'].'" name="inputTitle">
                                     <br>
                                     <br>
                                     <textarea style=" width: 500px; height: 300px; resize: none;" id="inputText" name="inputText"></textarea>
@@ -148,8 +164,9 @@
                         ');
                      }      
                   }
-            }
+               }     
             ?>
+
          </table>
       </div>
       <script>
