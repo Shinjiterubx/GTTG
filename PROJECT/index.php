@@ -105,20 +105,48 @@
                                  
                   for ($i=0; $i < count($datas); $i++) 
                   { 
-                     echo('
-                     <tr>
-                     <td style="border: 5px solid white;">
-                        <h2>'.$datas[$i]["title"].'</h2>
-                        <p>'.$datas[$i]["comment"].'</p>
-                        <br>
-                        <a type="submit" href="update_comment.php" value="'.$datas[$i]['pid'].'" id="modifyBtn" >Módosítás</button>
-                        <form action="delete_comment.php" method="POST">
-                           <input type="hidden" id="deleteBtn" name="deleteBtn" value="'.$datas[$i]['pid'].'"></input>
-                           <button type="submit" >Törlés</button>
-                        </form>
-                        </td>
-                  </tr>
+                     
+                     if ($datas[$i]["modify"] != 1) {
+                        echo('
+                        <tr>
+                           <td style="border: 5px solid white;">
+                              <h2>'.$datas[$i]["title"].'</h2>
+                              <p>'.$datas[$i]["comment"].'</p>
+                              <br>
+
+                              <form action="modify_comment.php" method="POST">
+                                 <input type="hidden" id="modifyBtnId" value="'.$datas[$i]['pid'].'" name="modifyBtnId"></input>
+                                 <input type="hidden" id="modifyBtn" value="'.$datas[$i]['modify'].'" name="modifyBtn"></input>
+                                 <button type="submit" >Módosítás</button>
+                              </form>
+                              
+                              <form action="delete_comment.php" method="POST">
+                                 <input type="hidden" id="deleteBtn" name="deleteBtn" value="'.$datas[$i]['pid'].'"></input>
+                                 <button type="submit" >Törlés</button>
+                              </form>
+                              </td>
+                        </tr>
                         ');
+                     }
+                     else{
+                        echo('
+                        <tr>
+                           <th>
+                              <h2 style="margin-top: 10%;">Bejegyzés Módosítása</h2>
+                                 <form action="modify_comment.php" method="POST">
+                                    <label>Cím</label>
+                                    <br>
+                                    <input type="text" id="inputTitle" name="inputTitle">
+                                    <br>
+                                    <br>
+                                    <textarea style=" width: 500px; height: 300px; resize: none;" id="inputText" name="inputText"></textarea>
+                                    <br>
+                                    <button type="submit">Módosítás</button>
+                                 </form>
+                           </th>
+                        </tr>
+                        ');
+                     }      
                   }
             }
             ?>
