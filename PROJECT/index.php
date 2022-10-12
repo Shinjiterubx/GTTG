@@ -78,7 +78,7 @@
       <h1 style="width: 40%; margin-left: 10%;">Kezdőlap</h1>
       <h2 style="width: 40%; margin-left: 10%;">Köszöntjük az Oláh Család Pékségében!</h2> 
 
-      <div class="middlecontainer" style="display: flex; width: 40%; margin-left: 10%; background-color: #F2F3F4; border-radius: 25px;">
+      <div class="middlecontainer" style="display: flex; width: 35%; margin-left: 10%; background-color: #F2F3F4; border-radius: 25px;">
          <table style="text-align: left;">
             <tr>
                <th>
@@ -90,6 +90,7 @@
                         <br>
                         <br>
                         <textarea style=" width: 500px; height: 300px; resize: none;" id="inputText" name="inputText"></textarea>
+                        <br>
                         <br>
                         <button type="submit">Létrehozás</button>
                      </form>
