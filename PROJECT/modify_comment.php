@@ -18,4 +18,3 @@ else{
   echo "<script>alert('Sikeres Frissítés!');</script>";
   header("Location: index.php");
 }
-
